@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: rgb(101,101,101);
+background: radial-gradient(circle, rgba(101,101,101,1) 0%, rgba(73,73,82,1) 52%, rgba(52,62,65,1) 100%);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro{
+    background-color: whitesmoke;
+    width:30rem;
+    padding:10px;
+    margin:10px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow:  5px 5px lightslategray;
+}
+
+.trigames{
+    flex-direction: column;
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    box-shadow:  5px 5px lightslategray;
+    padding:10px;
+    margin: 40px;
+    width: 20rem;
+    text-align: center;
+    
+}
+
+.Exercisedone{
+    display: flex;
+    flex-direction: column;
+}
+
+.gymwrapper{
+    display: flex;
+}
+
+
+.table_gym{
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+    table-layout: fixed;
+}
+
+td{
+    width: 100px;
+  overflow: hidden;
+}
+
+.Gym_act_list{
+    width: 100px;
+}
+
+.Gym_act_type{
+    width: 100px;
+}
+
+.bold{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.trigames{
+    display: flex;
+}
+
+.compared{
+    display: flex;
+    flex-direction: row;
+}

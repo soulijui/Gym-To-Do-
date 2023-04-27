@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="intro">
+        <h1>Daily Gym Health Checker</h1><br>
+        <p>This app will act as a kind of to do list for most of the gym activities you do</p>
+        <p >Today is <span id="datetoday" ></span> </p>
+        <br>
+        <form>
+            <label for="acts">What would you like to record for today</label><br>
+            <select id="act_today" class="acts" onchange="hidegym()">
+                <option value="Gym">Gym</option>
+                <option value="Rest">Rest Day</option>
+                <option value="Emergency">Emergency</option>
+              </select><br><br>
+            <label for="date_activity">What date did this occur?</label>
+            <input type="date" id="date_activity" name="date_activity"  required>
+            <div class="gym" id="gymops">
+                <label for="gym_acts">What exercises did you do for today</label><br>
+                <input class="gym_acts" id="gym_acts"></input>
+                <p>Please select your favorite Web language:</p>
+                <table class="table_gym">
+                    <tr>
+                        <td><input type="radio" id="arms" name="muscletype" value="Arms" checked="checked">
+                            <label for="arms">Arms</label></td>
+                            <td><input type="radio" id="abs" name="muscletype" value="Abs">
+                        <label for="abs">Abs</label></td>
+                        <td><input type="radio" id="shoulders" name="muscletype" value="Shoulders">
+                        <label for="shoulders">Shoulders</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="back" name="muscletype" value="Back">
+                        <label for="back">Back</label></td>
+                        <td><input type="radio" id="cardio" name="muscletype" value="Cardio">
+                        <label for="cardio">Cardio</label> </td>
+                        <td><input type="radio" id="chest" name="muscletype" value="Chest" >
+                        <label for="chest">Chest</label><br></td>
+                    </tr><td> </td>
+                    <td><input type="radio" id="legs" name="muscletype" value="Legs">
+                 <label for="legs">Legs</label></td><br>
+                 
+                </tr>
+                </table><br><br>
+                 <button type="button" class="add_exercise" onclick="appendex()"> Add Exercise </button>
+            </div>
+            <br><button type="button" class="Finalize" onclick="finalize()"> Finalize </button>
+        </form>
+        
+    </div>
+
+    <div class="compared"> 
+
+        <div class="trigames">
+            <h2 id="dateduring">Activities During</h2><br>
+            <input type="date" id="date_chosen" name="date_chosen" onchange="displayexsaved()">
+            <div class="Exercisedone" id="listexercisefromdate" >
+                
+            </div>
+        </div>
+
+
+
+        <div class="trigames">
+            <h2>Activities Done</h2><br>
+            <div class="Exercisedone" id="listexercise" >
+                PLACEHOLDER
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
